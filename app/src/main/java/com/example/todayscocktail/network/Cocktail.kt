@@ -5,8 +5,8 @@ import com.squareup.moshi.Json
 class Cocktail (
     @Json(name = "idDrink")
     val id: Int,
-    @Json(name = "idDrink")
+    @Json(name = "strDrink")
     val name: String,
-    @Json(name = "idDrink")
+    @Json(name = "strDrinkThumb")
     val thumbUrl: String
 )

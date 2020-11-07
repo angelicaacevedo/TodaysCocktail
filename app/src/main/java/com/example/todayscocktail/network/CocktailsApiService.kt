@@ -19,10 +19,10 @@ private val retrofit = Retrofit.Builder()
 
 interface CocktailsApiService {
     @GET( "filter.php?a=Alcoholic")
-    suspend fun getCocktails():CocktailsResponse
+    suspend fun getAlcoholicCocktails():CocktailsResponse
 
     @GET( "filter.php?a=Non_Alcoholic")
-    suspend fun getNonCocktails():CocktailsResponse
+    suspend fun getNonAlcoholicCocktails():CocktailsResponse
 }
 
 object CocktailsApi {
